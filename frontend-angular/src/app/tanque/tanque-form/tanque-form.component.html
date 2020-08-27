@@ -1,0 +1,38 @@
+<p-toast position="top-right" [style]="{marginTop: '80px'}"></p-toast>
+
+<ng-container>
+
+  <div class="ui-g">
+    <div class="ui-g-8 ui-g-offset-2">
+      <form [formGroup]="form">
+        <p-panel>
+
+          <div class="p-field p-col-12 p-md-4">
+            <span class="p-float-label">
+                <input type="text" id="descricao" formControlName="descricao" pInputText [(ngModel)]="tanque.descricao" [ngClass]="{ 'is-invalid' : submitted }">
+                <label for="inputtext">Descricao</label>
+            </span>
+          </div>
+
+            <div class="p-field p-col-12 p-md-4 mb-2">
+              <span class="p-float-label">
+                <input id="float-input" type="text" pInputText formControlName="quantidade" id="quantidade" [(ngModel)]="tanque.quantidade" [ngClass]="{ 'is-invalid' : submitted }">
+                <label for="float-input">Quantidade</label>
+              </span>
+            </div>
+
+            <div class="p-field p-col-12 p-md-4 mb-2">
+              <span class="p-float-label">
+                <input id="float-input" type="number" pInputText formControlName="tipoProduto" id="tipoProduto" [(ngModel)]="tanque.tipoProduto" [ngClass]="{ 'is-invalid' : submitted }">
+                <label for="float-input">Tipo Produto</label>
+              </span>
+            </div>
+
+
+          <p-button label="Salvar" class="ui-button-text botaoFrm" (onClick)="onSubmit()" ></p-button>
+          <p-button label="Cancelar" class="ui-button-text botaoFrm" (onClick)="onCancel()" ></p-button>
+        </p-panel>
+      </form>
+    </div>
+  </div>
+</ng-container>
