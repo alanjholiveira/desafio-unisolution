@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Desafio.CrosCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Desafio.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Desafio.CrosCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Desafio.CrosCutting.dll": {}
+        }
+      },
+      "Desafio.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Desafio.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Desafio.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Desafio.CrosCutting/1.0.0": {
+      "type": "project",
+      "path": "../Desafio.CrosCutting/Desafio.CrosCutting.csproj",
+      "msbuildProject": "../Desafio.CrosCutting/Desafio.CrosCutting.csproj"
+    },
+    "Desafio.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Desafio.Domain/Desafio.Domain.csproj",
+      "msbuildProject": "../Desafio.Domain/Desafio.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Desafio.CrosCutting >= 1.0.0",
+      "Desafio.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Alan\\.nuget\\packages\\": {}
@@ -32,7 +70,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Alan\\Desktop\\Desafio\\DesafioUniSolution\\Desafio.CrosCutting\\Desafio.CrosCutting.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Desktop\\Desafio\\DesafioUniSolution\\Desafio.CrosCutting\\Desafio.CrosCutting.csproj"
+            },
+            "C:\\Users\\Alan\\Desktop\\Desafio\\DesafioUniSolution\\Desafio.Domain\\Desafio.Domain.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Desktop\\Desafio\\DesafioUniSolution\\Desafio.Domain\\Desafio.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
